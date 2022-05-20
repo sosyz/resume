@@ -1,0 +1,142 @@
+@font-face {
+    font-family: HarmonyOS_Medium;
+    src: url("../fonts/HarmonyOS_Sans_Medium.ttf");
+}
+
+@font-face {
+    font-family: Emoji;
+    src: local("Apple Color Emojiji"), local("Segoe UI Emoji"), local("Segoe UI Symbol"), local("Noto Color Emoji");
+    unicode-range: U+1F000-1F644, U+203C-3299;
+}
+/* 页面 */
+body {
+    margin-top: 10vw;
+    margin-right: 12vh;
+    font-family: HarmonyOS_Medium, system-ui, —apple-system, Segoe UI, Rototo, Emoji, Helvetica, Arial, sans-serif;
+}
+
+@media print {
+    body {
+        font-size: .6em;
+    }
+
+    .divst .item {
+        margin-top: 12px !important;
+        width: 100%;
+        display: flex;
+        border-top: 4px solid red;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: .8em;
+    }
+
+    .divst .item {
+        margin-top: 12px !important;
+        width: 100%;
+        display: flex;
+        border-top: 4px solid red;
+    }
+}
+
+/* 对我的信息单独设置 */
+.myinfo span {
+    margin-right: .5em;
+}
+
+
+/* set img size */
+.myinfo span img,
+.content a img {
+    height: 1em;
+    width: 1em;
+    padding-right: .25em;
+}
+
+/* 对简历的设置 */
+.divst {
+    max-width: 960px;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+/* 整行 */
+.divst .item {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #dcdddd;
+}
+
+/* 行标题 */
+.item .title {
+    flex: 1;
+}
+.href {
+    font-size: .6em;
+}
+
+/* 设置标题颜色及左边红色突出 */
+.item .title h2 {
+    
+    color: #282828;
+    word-wrap: break-word;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    padding-left: .25em;
+    border-left: 5px solid #c7000b;
+}
+
+/* 为时间添加一个小图标 */
+.item .title span {
+    padding-left: 24px;
+    height: 22px;
+    line-height: 22px;
+    background: url(../assets/time-range.png) left center no-repeat;
+    margin-top: 10px;
+}
+
+/* 行内容 */
+.item .content {
+    flex: 6;
+    margin-left: 16px;
+}
+
+/* 行标题 */
+.content .title {
+    display: flex;
+    align-items: center;
+}
+
+/* 内容又分为许多小行，设置其字体大小 */
+.content .title p,
+h3 {
+    font-size: 1.25em;
+    flex: 1;
+}
+
+/* 设置右边距离防止长文本贴上右边不好看 */
+.content .title span {
+    padding-right: 1em;
+}
+
+/* 设置图片高度 */
+.content .title img {
+    height: 16px;
+}
+
+/* 设置说明内容的布局 */
+.content .caption {
+    display: block;
+}
+
+/* 设置说明内容字体的大小 */
+.content .caption p {
+    text-indent: 2em;
+}
+
+/* 设置无序列表的字体大小 */
+.font-bigger li {
+    font-size: 1.1em;
+}
