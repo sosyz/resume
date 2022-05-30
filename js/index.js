@@ -18,7 +18,7 @@ const info = Vue.createApp({
                 },
                 {
                     ico: "jsjds-logo.png",
-                    name: "第十五届大学生计算机大赛省赛",
+                    name: "第十五届中国大学生计算机大赛省赛",
                     lev: "二等奖",
                     time: "2022.5.29",
                     caption: ["该认证为软件设计能力认证"]
@@ -33,7 +33,7 @@ const info = Vue.createApp({
                 {
                     ico: "ustc-logo.png",
                     name: "第八届中科大信息安全大赛",
-                    lev: "排名： 前21%",
+                    lev: "排名: 前21%",
                     time: "2021.10.30",
                     caption: ["该认证为信息安全能力认证"]
                 }
