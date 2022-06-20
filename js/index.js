@@ -57,12 +57,12 @@ const info = Vue.createApp({
                     time: ["2021.11.1", "至今"],
                     url: [
                         {
-                            caption: "Github: https://github.com/sosyz/CloudPrint_uniapp",
-                            url: "https://github.com/sosyz/CloudPrint_uniapp"
+                            caption: "服务端: 参赛中, 仓库暂为私密",
+                            url: "javascript:void(0)"
                         },
                         {
-                            caption: "Github: https://github.com/sosyz/CloudPrint_Server",
-                            url: "https://github.com/sosyz/CloudPrint_Server"
+                            caption: "客户端: 参赛中, 仓库暂为私密",
+                            url: "javascript:void(0)"
                         }
                     ],
                     work: "前后端开发",
