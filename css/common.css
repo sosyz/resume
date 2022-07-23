@@ -96,6 +96,11 @@ body {
     margin-top: 10px;
 }
 
+/* 右间隔.3em */
+.mr3 {
+    margin-right: .3em;
+}
+
 /* 行内容 */
 .item .content {
     flex: 6;

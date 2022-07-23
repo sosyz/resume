@@ -98,7 +98,19 @@ const info = Vue.createApp({
             ],
             schoolLife: [
                 {
-                    name: "<img alt=\"qlzj\" src=\"assets/acm-logo.png\">ACM 协会",
+                    name: "<img alt=\"microsoft\" src=\"assets/microsoft.svg\" class=\"mr3\">微软Engage大学生培养计划",
+                    time: ["2022.7.11", "2022.8.19"],
+                    position: "一组成员",
+                    content: "接受微软导师培训，学习了协同开发、工程性思维、编程等知识, 参与了EasyWork项目的开发负责前端部分",
+                },
+                {
+                    name: "<img alt=\"microsoft\" src=\"assets/youthcamp.png\" class=\"mr3\">字节跳动青训营",
+                    time: ["2022.7.24", "2022.8.19"],
+                    position: "基础班学员",
+                    content: "接受字节跳动青训营培训, 学习了前端三件套、安全规范、TS、React、Web动画、小游戏小程序开发等知识",
+                },
+                {
+                    name: "<img alt=\"qlzj\" src=\"assets/acm-logo.png\" class=\"mr3\">ACM 协会",
                     time: ["2021.3", "至今"],
                     position: "核心成员",
                     content: "负责了 ACM 训练 OJ 的搭建, 出题, 提交, 测试, 排名等工作, 参与了 ACM 协会的大量活动, 包括 ACM 协会的比赛, 技术交流, 新生培训等"
