@@ -40,11 +40,23 @@ body {
     }
 }
 
+.footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3em;
+    align-items: center;
+    justify-content: center;
+}
+
 /* 对我的信息单独设置 */
 .myinfo span {
     margin-right: .5em;
 }
 
+img {
+    padding-right: .3em;
+}
 
 /* set img size */
 .myinfo span img,
@@ -94,11 +106,6 @@ body {
     line-height: 22px;
     background: url(../assets/time-range.png) left center no-repeat;
     margin-top: 10px;
-}
-
-/* 右间隔.3em */
-.mr3 {
-    margin-right: .3em;
 }
 
 /* 行内容 */

@@ -49,7 +49,7 @@ const info = Vue.createApp({
                         }
                     ],
                     work: "前后端开发",
-                    content: "前端使用 Vue 解决了数据绑定问题, 后端使用 SpringBoot 编写, 分为vo, controller, service, mapper, model 结构, vo定义前后端交互数据模型, controller 检查传入参数及调用 service 层, services进行数据存取计算操作, mapper 层使用 Mybatis 操作数据库, 在聊天消息收发中运用了 RabbitMQ 来处理防止过载, 同时使用 redis 对冷数据缓存减少对数据库读取压力",
+                    content: "<br/><br/>前端: 使用 Vue + Element构建<br/>后端: 使用 SpringBoot 处理HTTP请求, 使用 Mybatis 操作数据库, 在聊天消息收发中运用了 RabbitMQ 来处理防止过载, 同时使用 redis 对冷数据缓存减少对数据库读取压力",
                     technology: "Vue, SpringBoot, Mybatis, RabbitMQ, Redis"
                 },
                 {
@@ -57,26 +57,26 @@ const info = Vue.createApp({
                     time: ["2021.11.1", "至今"],
                     url: [
                         {
-                            caption: "服务端: 参赛中, 仓库暂为私密",
-                            url: "javascript:void(0)"
+                            caption: "服务端: https://github.com/sosyz/CloudOffice_Server",
+                            url: "https://github.com/sosyz/CloudOffice_Server"
                         },
                         {
-                            caption: "客户端: 参赛中, 仓库暂为私密",
-                            url: "javascript:void(0)"
+                            caption: "客户端: https://github.com/sosyz/CloudOffice_uniapp",
+                            url: "https://github.com/sosyz/CloudOffice_uniapp"
                         }
                     ],
                     work: "前后端开发",
-                    content: "前端使用 uni-app 开发, 后端使用 Gin, Gorm 开发, 运行环境为 Serverless, 通过组建私有网络来减低延迟, 使用了腾讯云COS存储桶存储文件及文档处理来获取文件信息, 通过使用 Python 管理打印队列, 打印机从打印队列中获取文件进行打印, 打印机端通过 WebSocket 连接打印机池 Serverless 心跳上报状态",
+                    content: "<br/>前端: 使用 uni-app 开发<br/>后端使用 Gin, Gorm 开发, 运行环境为 Serverless, 通过组建私有网络来减低延迟, 使用了S3标准存储桶存储文件, 通过解析OpenXML信息及使用腾讯云文档能力来获取文件信息, 通过使用 Python 管理打印队列, 打印机从打印队列中获取文件进行打印, 打印机端通过 WebSocket 连接打印机池 Serverless 心跳上报状态",
                     technology: "uni-app, Gin, Gorm, Serverless, Python, WebSocket"
                 },
                 {
                     name: "撤回查询 (SeekMsg)",
                     time: ["2017.6", "2019.10"],
                     url: [
-                        {
-                            caption: "Gitee: https://gitee.com/sonui/CoolQ_SeekMsg",
-                            url: "https://gitee.com/sonui/CoolQ_SeekMsg"
-                        }
+                        // {
+                        //     caption: "Gitee: https://gitee.com/sonui/CoolQ_SeekMsg",
+                        //     url: "javascript:void();"
+                        // }
                     ],
                     work: "前后端开发",
                     content: "使用 QQ 机器人框架开放SDK进行二次开发, 对收到的消息进行存储的同时 Hook 框架 SendMsg 接口来保存机器人发送的消息， 存储于本地 SQLite3 数据库中， 使用者通过命令触发调取记录， AES-128-CBC 加密后上传至服务器后回复查看链接，使用者通过链接后的 \"#\" 参数解密数据, 作为插件运行在500+ QQ 机器人",
@@ -98,34 +98,34 @@ const info = Vue.createApp({
             ],
             schoolLife: [
                 {
-                    name: "<img alt=\"microsoft\" src=\"assets/microsoft.svg\" class=\"mr3\">微软Engage大学生培养计划",
+                    name: "<img alt=\"microsoft\" src=\"assets/microsoft.svg\">微软Engage大学生培养计划",
                     time: ["2022.7.11", "2022.8.19"],
                     position: "一组成员",
                     content: "接受微软导师培训，学习了协同开发、工程性思维、编程等知识, 参与了EasyWork项目的开发负责前端部分",
                 },
                 {
-                    name: "<img alt=\"microsoft\" src=\"assets/youthcamp.png\" class=\"mr3\">字节跳动青训营",
+                    name: "<img alt=\"microsoft\" src=\"assets/youthcamp.png\">字节跳动青训营",
                     time: ["2022.7.24", "2022.8.19"],
                     position: "基础班学员",
                     content: "接受字节跳动青训营培训, 学习了前端三件套、安全规范、TS、React、Web动画、小游戏小程序开发等知识",
                 },
                 {
-                    name: "<img alt=\"qlzj\" src=\"assets/acm-logo.png\" class=\"mr3\">ACM 协会",
+                    name: "<img alt=\"qlzj\" src=\"assets/acm-logo.png\">ACM 协会",
                     time: ["2021.3", "至今"],
                     position: "核心成员",
                     content: "负责了 ACM 训练 OJ 的搭建, 出题, 提交, 测试, 排名等工作, 参与了 ACM 协会的大量活动, 包括 ACM 协会的比赛, 技术交流, 新生培训等"
                 },
+                // {
+                //     name: "Phoenix 项目组",
+                //     time: ["2022.5.1", "2023.7.1"],
+                //     position: "组长",
+                //     content: "负责了项目组的组建, 人员管理, 产品设计, 对校用 OJ 进行开发"
+                // },
                 {
-                    name: "Phoenix 项目组",
-                    time: ["2022.5.1", "2023.7.1"],
-                    position: "组长",
-                    content: "负责了项目组的组建, 人员管理, 产品设计, 对校用 OJ 进行开发"
-                },
-                {
-                    name: "参加竞赛",
+                    name: "<img alt=\"contest\" src=\"assets/contest.svg\">竞赛活动",
                     time: ["2019.9.1", "2023.7.1"],
                     position: false,
-                    content: "在校期间积极参与各项比赛，例如互联网+、挑战杯、申请大学生创新创业基金、协办学校 ACM 比赛等, 在参加活动体验活动的同时也取得了优秀的成绩, 成功申请数项大学生创新创业基金"
+                    content: "在校期间积极参与各项比赛，例如互联网+、挑战杯、申请大学生创新创业基金, 协办学校 ACM 比赛, 在参加活动体验活动的同时也取得了优秀的成绩, 成功申请数项大学生创新创业基金"
                 }
             ],
             other: [

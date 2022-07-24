@@ -21,11 +21,11 @@
                         <div class="contact">
                             <a href="tel:null">
                                 <img alt="Phone" src="assets/phone-logo.svg">
-                                null
+                                私密
                             </a><br />
                             <a href="mailto:">
                                 <img alt="Email" src="assets/email-logo.svg">
-                                me#sonui·cn
+                                me[at]sonui·cn
                             </a>
                         </div>
                         <div style="flex: 1;">
@@ -59,14 +59,14 @@
         </div>
         <div class="item">
             <div class="title">
-                <h2>技能</h2>
+                <h2>自我介绍</h2>
             </div>
             <div class="content font-bigger">
                 <ul style="line-height: 2.4em;">
                     <li>服务端开发：会用常用的网页服务端开发框架和语言 ( 如： Spring Boot、Gin、PHP) 的基本功能</li>
                     <li>客户端开发：会用常用的网页客户端开发框架和语言 ( 如： Vue) 的基本功能。对 Windows 程序开发有一定了解</li>
-                    <li>偏好语言： Java, PHP, Golang, Python, Cpp</li>
-                    <li>🎉拥有优秀的搜索能力和自我学习能力</li>
+                    <li>偏好语言： Golang, Java, PHP, Python, Cpp等</li>
+                    <li>🎉拥有优秀的搜索能力和自我学习能力, 自初中起学习编程</li>
                 </ul>
             </div>
         </div>
@@ -100,10 +100,10 @@
                     </div>
                     <div>
                         <p v-for="url in item.url">
-                            <a :href="url.url">{{url.caption}}</a>
+                            <a :href="url.url" target="_blank">{{url.caption}}</a>
                         </p>
                         <p>职责：{{item.work}}</p>
-                        <p>项目说明: {{item.content}}</p>
+                        <p v-html="'项目说明: ' + item.content"></p>
                         <p>技术栈： {{item.technology}}</p>
                     </div>
                 </div>
@@ -141,6 +141,12 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/sosyz/resume">
+            <img style="width: 1em;" alt="GitHub" src="assets/github-logo.svg">
+            GitHub Page
+        </a>
     </div>
     <script src="js/index.js"></script>
 </body>
