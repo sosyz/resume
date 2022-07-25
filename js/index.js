@@ -3,6 +3,13 @@ const info = Vue.createApp({
         return {
             honor: [
                 {
+                    ico: "jsjds-logo.png",
+                    name: "第十五届中国大学生计算机大赛国赛",
+                    lev: "三等奖",
+                    time: "2022.7.25",
+                    caption: ["该认证为软件开发能力认证"]
+                },
+                {
                     ico: "lanqiao-logo.svg",
                     name: "第十二届蓝桥杯省赛",
                     lev: "一等奖",
@@ -15,13 +22,6 @@ const info = Vue.createApp({
                     lev: "一等奖",
                     time: "2022.4.28",
                     caption: ["C/C++ 程序设计大学B组", "该认证为算法能力认证"]
-                },
-                {
-                    ico: "jsjds-logo.png",
-                    name: "第十五届中国大学生计算机大赛省赛",
-                    lev: "二等奖",
-                    time: "2022.5.29",
-                    caption: ["该认证为软件设计能力认证"]
                 },
                 {
                     ico: "huawei-logo-30.png",
