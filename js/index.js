@@ -1,6 +1,10 @@
 const info = Vue.createApp({
     data() {
         return {
+            tel: '私密',
+            email: 'me[at]sonui·cn',
+            name: 'Sonui',
+            school: '内蒙古某大学',
             honor: [
                 {
                     ico: "jsjds-logo.png",

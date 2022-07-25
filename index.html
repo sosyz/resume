@@ -9,23 +9,23 @@
     <script src="js/vue@3.js"></script>
 </head>
 
-<body style="margin-bottom: 100px;">
+<body>
     <div id="info" class="divst">
         <div class="item" style="border-top: none;">
             <div class="content" style="width: 100%">
                 <div class="myinfo">
                     <h1>
-                        Sonui <a style="font-size: .5em; margin-left: 10px;">求职方向：研发</a>
+                        {{name}} <a style="font-size: .5em; margin-left: 10px;">求职方向：研发</a>
                     </h1>
                     <div style="display: flex; flex-direction: row-reverse;">
                         <div class="contact">
-                            <a href="tel:null">
+                            <a :href="'tel:' + tel">
                                 <img alt="Phone" src="assets/phone-logo.svg">
-                                私密
+                                {{tel}}
                             </a><br />
-                            <a href="mailto:">
+                            <a :href="'mailto:' + email">
                                 <img alt="Email" src="assets/email-logo.svg">
-                                me[at]sonui·cn
+                                {{email}}
                             </a>
                         </div>
                         <div style="flex: 1;">
@@ -45,7 +45,7 @@
                                 <p>
                                     <img alt="School" src="assets/address-logo.svg" style="height: 1em;
         padding-right: .25em;">
-                                    内蒙某大学
+                                    {{school}}
                                 </p>
                                 <span>
                                     <img alt="Specialities" src="assets/school-logo.svg">
@@ -62,7 +62,7 @@
                 <h2>自我介绍</h2>
             </div>
             <div class="content font-bigger">
-                <ul style="line-height: 2.4em;">
+                <ul style="line-height: 1.5em; margin-top: 0;">
                     <li>服务端开发：会用常用的网页服务端开发框架和语言 ( 如： Spring Boot、Gin、PHP) 的基本功能</li>
                     <li>客户端开发：会用常用的网页客户端开发框架和语言 ( 如： Vue) 的基本功能。对 Windows 程序开发有一定了解</li>
                     <li>偏好语言： Golang, Java, PHP, Python, Cpp等</li>
@@ -77,9 +77,10 @@
             <div class="content">
                 <div v-for="item in honor">
                     <div class="title">
-                        <p>
+                        <h3>
                             <img alt="lanqiao" :src="'./assets/' + item.ico" style="height: 1em;" />
-                            {{item.name + ' ' + item.lev}}</p>
+                            {{item.name + ' ' + item.lev}}
+                        </h3>
                         <span>{{item.time}}</span>
                     </div>
                     <div class="caption">

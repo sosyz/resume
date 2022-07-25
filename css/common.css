@@ -8,13 +8,18 @@
     src: local("Apple Color Emojiji"), local("Segoe UI Emoji"), local("Segoe UI Symbol"), local("Noto Color Emoji");
     unicode-range: U+1F000-1F644, U+203C-3299;
 }
+
 /* 页面 */
 body {
-    margin-right: 12vh;
+    margin-bottom: 10px;
     font-family: HarmonyOS_Medium, system-ui, —apple-system, Segoe UI, Rototo, Emoji, Helvetica, Arial, sans-serif;
 }
 
 @media print {
+    @page {
+        margin: 1.2em;
+    }
+
     body {
         font-size: .6em;
     }
@@ -24,6 +29,15 @@ body {
         width: 100%;
         display: flex;
         border-top: 4px solid red;
+    }
+
+    .item .content {
+        margin-top: 8px !important;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 3px;
     }
 }
 
@@ -38,6 +52,14 @@ body {
         display: flex;
         border-top: 4px solid red;
     }
+
+    
+}
+
+h3,
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .footer {
@@ -85,13 +107,13 @@ img {
 .item .title {
     flex: 1;
 }
+
 .href {
     font-size: .6em;
 }
 
 /* 设置标题颜色及左边红色突出 */
 .item .title h2 {
-    
     color: #282828;
     word-wrap: break-word;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -110,6 +132,7 @@ img {
 
 /* 行内容 */
 .item .content {
+    margin-top: 20px;
     flex: 6;
     margin-left: 16px;
 }
